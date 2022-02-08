@@ -97,12 +97,20 @@ p {
 
 /* Navbar */
 #navbar {
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-pink);
 }
 
 .navbar__menu {
@@ -131,17 +139,18 @@ p {
 
 .navbar__toggle-btn{
     position: absolute;
-    top: 03px;
+    top: 0px;
     right:32px;
     font-size: 24px;
     color: var(--color-white);
+    line-height: 70px;
     display: none;
 }
 
 /* Home */
 #home {
     background: url(images/home-background.png) center/cover no-repeat;
-    padding: 40px;
+    padding: 120px 40px 40px 40px;
     text-align: center;
 }
 
@@ -198,13 +207,21 @@ p {
     margin-bottom: 16px;
 }
 
+.major__icon:last-child {
+    font-size: 55px;
+}
+
 .major__icon i {
     transition: all var(--animation-duration) ease;
 }
 
+.major__icon:hover {
+    border-color: var(--color-pink);
+}
+
 .major__icon:hover i {
     color: var(--color-pink);
-    transform: rotate(-30deg) scale(1.2);
+    transform: rotate(10deg) scale(1.2);
 }
 
 .major__title, .major__description {
@@ -215,8 +232,15 @@ p {
     font-size: var(--font-small);
 }
 
+.about__jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .job {
     display: flex;
+    padding: 0 10px;
     align-items: center;
 }
 
@@ -231,11 +255,26 @@ p {
 }
 
 .job__name {
+    position: relative;
+    color: var(--color-black);
     font-size: var(--font-small);
+    font-weight: var(--weight-semi-bold);
+}
+
+.job__name::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-yellow);
 }
 
 .job__period {
     font-size: var(--font-micro);
+    margin: 0;
 }
 
 /* Skill */
@@ -485,6 +524,10 @@ p {
     
     .major {
         margin-bottom: 38px;
+    }
+
+    .about__jobs {
+        flex-direction: column;
     }
 
     .skillset {
