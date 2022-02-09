@@ -548,6 +548,9 @@ p {
 /* Scroll */
 .arrow-up{
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 50px;
     right: 50px;
     width: 70px;
