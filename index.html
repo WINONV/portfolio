@@ -14,251 +14,274 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
-            <a href="#">JIWON</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">Work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">testimonials</li>
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn">
-            <i class="fas fa-bars"></i>
+    <div id="wrap">
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <i class="fab fa-diaspora"></i>
+                <a href="#">JIWON</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">Work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">testimonials</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+            <!-- Toggle button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Home -->
+        <section id="home">
+            <div class="home__container">
+                <img src="images/profile.jpg" alt="Jiwon's profile photo" class="home__avatar">
+                <h1 class="home__title">Hello, <br>I'm Dream Code</h1>
+                <h2 class="home__description">A Software Engineer currently residing in Sydney, Australla.</h2>
+                <button class="home__contact">Contact Me</button>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section section__container">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet
+                neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet.
+                molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+                Suspendisse luctus mattis cur</p>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h2 class="major__title">Front-end</h2>
+                    <div class="major__description">HTML, CSS, SCSS, JavaScript, JQUERY</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-github-alt"></i>
+                    </div>
+                    <h2 class="major__title">management</h2>
+                    <div class="major__description">GIT, SVN</div>
+                </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h2 class="major__title">Communication</h2>
+                    <div class="major__description">Communication</div>
+                </div>
+            </div>
+            <div class="about__jobs">
+                <div class="job">
+                    <img src="images/jobs/logo-settlebank.png" alt="settlebank" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">세틀뱅크 / UX팀 대리</p>
+                        <p class="job__period">2021.11.15 ~ 2022.01.14</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="images/jobs/logo-netive.png" alt="netive" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">네티브 / UI개발팀 주임</p>
+                        <p class="job__period">2018.08.01 ~ 2021.11.12</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="images/jobs/logo-iandvision.png" alt="iandvision" class="job__logo">
+                    <div class="job__description">
+                        <p class="job__name">아이엔비전 / 디자인팀 사원</p>
+                        <p class="job__period">2017.01.01 ~ 2017.08.31</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="section__container">
+                <h1>Skills</h1>
+                <h2>Skills &amp; Attributes</h2>
+                <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable
+                    of
+                    working within a team environment and independently. Ablity to plan and time schedule, work under
+                    strict
+                    time pressure and adapt quickly when needed.</p>
+                <div class="skillset">
+                    <div class="skillset__left">
+                        <h3 class="skillset__title">Skills</h3>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>HTML</span>
+                                <span>99%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 99%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JAVASCRIPT</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillset__right">
+                        <div class="tools">
+                            <h3 class="skillset__title">Tools</h3>
+                            <ul class="tools_list">
+                                <li><span>Visual Studio Code</span></li>
+                                <li><span>Adobe Program</span></li>
+                            </ul>
+                        </div>
+                        <div class="etc">
+                            <h3 class="skillset__title">Etc</h3>
+                            <ul class="ect__list">
+                                <li><span>Git</span></li>
+                                <li><span>Sourcetree</span></li>
+                                <li><span>SVN</span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="section section__container">
+            <h1>My work</h1>
+            <h3>Project</h3>
+            <div class="work__categories">
+                <button class="category__btn selected" data-filter="*">All<span
+                        class="category__count">8</span></button>
+                <button class="category__btn" data-filter="responsive">Responsive<span
+                        class="category__count">3</span></button>
+                <!-- <button class="category__btn">Back-end<span class="category__count">3</span></button> -->
+                <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">2</span></button>
+            </div>
+            <div class="work__projects">
+                <a href="" class="project" target="blank" data-type="responsive">
+                    <img src="images/projects/" alt="project00">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank" data-type="responsive">
+                    <img src="images/projects/" alt="project01">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank" data-type="responsive">
+                    <img src="images/projects/" alt="project02">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="blank" data-type="mobile">
+                    <img src="images/projects/" alt="project03">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section">
+            <div class="section__container">
+                <h1>Testimonials</h1>
+                <h3>See what they say about me</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <img src="images/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
+                        <div class="testimonial__speech-bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur
+                                adipis Lorem
+                                ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis
+                                Lorem
+                                ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur
+                                adipisLorem ipsum
+                                dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem
+                                ipsum dolor
+                                sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum
+                                dolor sit
+                                amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor
+                                sit amet
+                                consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit
+                                amet
+                                consectetur adipis</p>
+                            <p class="name"><a href="">Ellie</a> / samsung</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
+                        <div class="testimonial__speech-bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur
+                                adipis Lorem
+                                ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis
+                                Lorem
+                                ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur
+                                adipisLorem ipsum
+                                dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem
+                                ipsum dolor
+                                sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum
+                                dolor sit
+                                amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor
+                                sit amet
+                                consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit
+                                amet
+                                consectetur adipis</p>
+                            <p class="name"><a href="">Ellie</a> / samsung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="section__container">
+                <h1 class="contact__title">Let's talk</h1>
+                <h2 class="contact__email">hallns5227@gmail.com</h2>
+                <div class="contact__links">
+                    <a href="" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fab fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <div class="contact__rights">
+                    2022 All right reserved
+                </div>
+            </div>
+        </section>
+
+        <!-- Arrow up -->
+        <button class="arrow-up">
+            <i class="fas fa-arrow-up"></i>
         </button>
-    </nav>
-
-    <!-- Home -->
-    <section id="home">
-        <div class="home__container">
-            <img src="images/profile.jpg" alt="Jiwon's profile photo" class="home__avatar">
-            <h1 class="home__title">Hello, <br>I'm Dream Code</h1>
-            <h2 class="home__description">A Software Engineer currently residing in Sydney, Australla.</h2>
-            <button class="home__contact">Contact Me</button>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet. molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cur</p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, SCSS, JavaScript, JQUERY</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-github-alt"></i>
-                </div>
-                <h2 class="major__title">management</h2>
-                <div class="major__description">GIT, SVN</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-paper-plane"></i>
-                </div>
-                <h2 class="major__title">Communication</h2>
-                <div class="major__description">Communication</div>
-            </div>
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="images/jobs/logo-settlebank.png" alt="settlebank" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">세틀뱅크 / UX팀 대리</p>
-                    <p class="job__period">2021.11.15 ~ 2022.01.14</p>
-                </div>
-            </div>
-            <div class="job">
-                <img src="images/jobs/logo-netive.png" alt="netive" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">네티브 / UI개발팀 주임</p>
-                    <p class="job__period">2018.08.01 ~ 2021.11.12</p>
-                </div>
-            </div>
-            <div class="job">
-                <img src="images/jobs/logo-iandvision.png" alt="iandvision" class="job__logo">
-                <div class="job__description">
-                    <p class="job__name">아이엔비전 / 디자인팀 사원</p>
-                    <p class="job__period">2017.01.01 ~ 2017.08.31</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skills &amp; Attributes</h2>
-            <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of
-                working within a team environment and independently. Ablity to plan and time schedule, work under strict
-                time pressure and adapt quickly when needed.</p>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 99%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JAVASCRIPT</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools_list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>Adobe Program</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="ect__list">
-                            <li><span>Git</span></li>
-                            <li><span>Scrum Master</span></li>
-                            <li><span>Math</span></li>
-                        </ul>
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work" class="section section__container">
-        <h1>My work</h1>
-        <h3>Project</h3>
-        <div class="work__categories">
-            <button class="category__btn selected" data-filter="*">All<span class="category__count">8</span></button>
-            <button class="category__btn" data-filter="responsive">Responsive<span class="category__count">3</span></button>
-            <!-- <button class="category__btn">Back-end<span class="category__count">3</span></button> -->
-            <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">2</span></button>
-        </div>
-        <div class="work__projects">
-            <a href="" class="project" target="blank" data-type="responsive">
-                <img src="images/projects/" alt="project00">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank" data-type="responsive">
-                <img src="images/projects/" alt="project01">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank" data-type="responsive">
-                <img src="images/projects/" alt="project02">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="" class="project" target="blank" data-type="mobile">
-                <img src="images/projects/" alt="project03">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="images/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis Lorem
-                            ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis Lorem
-                            ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum
-                            dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor
-                            sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit
-                            amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet
-                            consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet
-                            consectetur adipis</p>
-                        <p class="name"><a href="">Ellie</a> / samsung</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis Lorem
-                            ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipis Lorem
-                            ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum
-                            dolor sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor
-                            sit amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit
-                            amet consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet
-                            consectetur adipisLorem ipsum dolor sit amet consectetur adipisLorem ipsum dolor sit amet
-                            consectetur adipis</p>
-                        <p class="name"><a href="">Ellie</a> / samsung</p>
-                    </div>
-                    <img src="images/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <div class="section__container">
-            <h1 class="contact__title">Let's talk</h1>
-            <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
-            <div class="contact__links">
-                <a href="" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-linkedin-square"></i>
-                </a>
-            </div>
-            <div class="contact__rights">
-                2020 Dream Coding Ellie - All right reserved
-            </div>
-        </div>
-    </section>
-
-    <!-- Arrow up -->
-    <button class="arrow-up">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    </div>
 </body>
 </html>
