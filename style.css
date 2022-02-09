@@ -510,6 +510,10 @@ p {
     color: var(--color-light-grey);
 }
 
+.testimonial__name {
+    margin-top: 20px;
+}
+
 .testimonial__name-mark {
     color: var(--color-pink)
 }
